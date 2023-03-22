@@ -16,15 +16,19 @@ const SearchBar = ({ onSearch }) => {
     }
     setQuery("");
   };
+
   return (
-    <div className="w-[40%] mx-auto">
-      <form onSubmit={submitHandler} className="mb-8">
+    <div className="w-[50%] mx-auto border-2 p-4 flex justify-center items-center my-2 rounded-md">
+      <form onSubmit={submitHandler} className="w-full ">
+        <label className="text-3xl font-semibold" htmlFor="">
+          Search Image
+        </label>
         <input
           onChange={changeHandler}
           value={query}
           type="text"
-          placeholder="Type here"
-          className="input input-bordered input-info w-full"
+          placeholder="Search here"
+          className="input input-bordered w-full mt-2"
         />
       </form>
     </div>
