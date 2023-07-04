@@ -21,7 +21,7 @@ const SearchBar = ({ onSearch }) => {
     <div className="w-[50%] mx-auto border-2 p-4 flex justify-center items-center my-2 rounded-md">
       <form onSubmit={submitHandler} className="w-full ">
         <label className="text-3xl font-semibold" htmlFor="">
-          Search Image
+          Search Your Image
         </label>
         <input
           onChange={changeHandler}
